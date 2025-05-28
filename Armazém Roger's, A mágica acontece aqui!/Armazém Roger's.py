@@ -278,13 +278,13 @@ def JACKPOT(saldo,index):
             somat = primeirovalor + segundovalor + terceirovalor
             print( str(primeirovalor) + ' | ' + str(segundovalor) + ' | ' + str(terceirovalor) + ' | ')
             if somat == 9:
-                saldo[index] = saldo[index] **2
+                saldo[index] = saldo[index] + aposta*2
             elif somat == 16:
-                saldo[index] = saldo[index] **2
+                saldo[index] = saldo[index] + aposta*2
             elif somat == 25:
-                saldo[index] = saldo[index] **3
+                saldo[index] = saldo[index] + aposta*3
             elif somat == 49:
-                saldo[index] = saldo[index] **7
+                saldo[index] = saldo[index] + aposta*7
 
             else:
                 saldo[index] = saldo[index] - aposta
